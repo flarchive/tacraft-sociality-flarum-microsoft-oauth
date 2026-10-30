@@ -1,0 +1,41 @@
+{
+    "name": "tacraft-sociality/flarum-microsoft-oauth",
+    "description": "Log in to your Flarum forum with Microsoft",
+    "keywords": [
+        "flarum",
+        "microsoft",
+        "oauth",
+        "login"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0.2",
+        "thenetworg/oauth2-azure": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "Tacraft Sociality"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TacraftSociality\\MicrosoftOAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Log In with Microsoft",
+            "category": "feature",
+            "icon": {
+                "name": "fab fa-microsoft",
+                "backgroundColor": "#0067b8",
+                "color": "#fff"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

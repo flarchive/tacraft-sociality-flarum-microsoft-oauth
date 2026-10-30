@@ -1,0 +1,40 @@
+tacraft-sociality-microsoft-oauth:
+  admin:
+    settings:
+      client_id_label: Application (client) ID
+      client_secret_label: Client secret
+      tenant_label: Tenant (optional)
+      callback_help: "Set the redirect URI in Microsoft Entra ID to {url}"
+      tenant_help: "Leave blank for common, or enter a tenant ID, domain, organizations or consumers."
+
+  forum:
+    log_in_with: Log In with Microsoft
+
+    link:
+      name: Microsoft
+      heading: Microsoft account
+      help: Link your Microsoft account so you can sign in with it, or remove an existing link.
+      status_linked: Linked
+      status_unlinked: Not linked
+      identifier: "Account ID: {identifier}"
+      linked_at: "Linked {time}"
+      bind_button: Link Microsoft account
+      rebind_button: Use a different account
+      unbind_button: Remove link
+      unlink_confirm: Are you sure you want to remove the link to your Microsoft account? It will no longer be linked to this forum account; if the email addresses match, signing in with it again may link it automatically.
+      linked_success: Your Microsoft account has been linked. You can now sign in with Microsoft.
+      unlinked_success: Your Microsoft account has been unlinked.
+      unlink_failed: Could not remove the Microsoft link. Please try again.
+      load_failed: Could not load your Microsoft link status. Please try again.
+      retry: Try again
+
+    errors:
+      not_configured: Microsoft sign-in is not configured yet.
+      cancelled: Microsoft sign-in was cancelled.
+      invalid_state: Microsoft sign-in session expired. Please try again.
+      login_required: Please log in before linking a Microsoft account.
+      already_linked: This Microsoft account is already linked to another user.
+      provider_error: Microsoft sign-in failed. Please try again.
+      invalid_response: Microsoft did not return a usable account.
+      network_error: Could not reach Microsoft. Please try again.
+      unknown: Microsoft sign-in failed. Please try again.

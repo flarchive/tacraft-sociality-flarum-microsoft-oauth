@@ -1,0 +1,40 @@
+tacraft-sociality-microsoft-oauth:
+  admin:
+    settings:
+      client_id_label: 应用程序（客户端）ID
+      client_secret_label: 客户端密钥
+      tenant_label: 租户（可选）
+      callback_help: "在 Microsoft Entra ID 中将重定向 URI 设置为 {url}"
+      tenant_help: "留空表示 common，也可以填写租户 ID、域名、organizations 或 consumers。"
+
+  forum:
+    log_in_with: 使用 Microsoft 登录
+
+    link:
+      name: Microsoft
+      heading: Microsoft 账号
+      help: 绑定 Microsoft 账号后即可使用它登录论坛；也可以在这里解除已有的绑定。
+      status_linked: 已绑定
+      status_unlinked: 未绑定
+      identifier: "账号标识：{identifier}"
+      linked_at: "绑定于 {time}"
+      bind_button: 绑定 Microsoft 账号
+      rebind_button: 更换绑定的账号
+      unbind_button: 解除绑定
+      unlink_confirm: 确定要解除 Microsoft 绑定吗？解除后该账号将不再直接关联到当前论坛账号；如果邮箱一致，下次使用它登录时可能会自动重新关联。
+      linked_success: Microsoft 账号绑定成功，现在可以使用它登录论坛了。
+      unlinked_success: 已解除 Microsoft 账号绑定。
+      unlink_failed: 解除 Microsoft 绑定失败，请重试。
+      load_failed: 无法读取 Microsoft 绑定状态，请重试。
+      retry: 重试
+
+    errors:
+      not_configured: Microsoft 登录尚未配置。
+      cancelled: 已取消 Microsoft 登录。
+      invalid_state: Microsoft 登录会话已过期，请重试。
+      login_required: 请先登录后再绑定 Microsoft 账号。
+      already_linked: 该 Microsoft 账号已绑定到其他用户。
+      provider_error: Microsoft 登录失败，请重试。
+      invalid_response: Microsoft 未返回可用的账户信息。
+      network_error: 无法连接 Microsoft，请重试。
+      unknown: Microsoft 登录失败，请重试。
